@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personajes de Rick y Morty</title>
+</head>
+<body>
+    <h1>Personajes Rick y Morty</h1>
+    <h2>Personajes por ID</h2>
+    <label for="charID">Introduce el ID del personaje</label>
+    <input type="text" id="charID" placeholder="153" />
+    <button onclick="getCharsInfo()">Obtener info del personaje</button>
+    <br>
+    <h2>Filtrador por nombre</h2>
+    <label for="charFilter">Introduce el nombre del personaje</label>
+    <input type="text" id="charFilter" placeholder="rick" />
+    <button onclick="getCharsFilter()">Obtener filtrado del personaje</button>
+    <br>
+    <h2>Todos los personajes</h2>
+    <button id="allInfo" onclick="getAllCharsInfo()">Obtener</button>
+    <button onclick="deleteChars()">Borrar</button>
+    <div id="charInfo"></div>
+    <script src="./js/script.js"></script>
+    
+</body>
+</html>
